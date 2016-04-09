@@ -24,6 +24,7 @@ namespace RaysHotDogs.Core.Repository
         {
             string responseJson = null;
 
+
             using (var client = new HttpClient())
             {
                 Task<HttpResponseMessage> getResponse = client.GetAsync(uri);
