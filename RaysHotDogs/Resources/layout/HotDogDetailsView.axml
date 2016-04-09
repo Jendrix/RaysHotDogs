@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#FCD972"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/hotDogImageView" />
+        <TextView
+            android:text="Hot dog name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotDogNameTextView"
+            android:paddingTop="20dp"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:editable="false" />
+        <TextView
+            android:text="Hot short desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shortDescriptionTextView"
+            android:paddingTop="20dp"
+            android:textSize="14dp"
+            android:textColor="@android:color/black"
+            android:editable="false" />
+        <TextView
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dapibus quam quis porta posuere. Duis ut metus ac mauris porttitor tincidunt."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionTextView"
+            android:paddingTop="20dp"
+            android:textSize="12dp"
+            android:textColor="@android:color/black"
+            android:editable="false" />
+        <TextView
+            android:text="111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceTextView"
+            android:paddingTop="20dp"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:editable="false"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout1">
+            <Button
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelButton"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp" />
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:id="@+id/amountEditText"
+                android:inputType="number"
+                android:text="1"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black" />
+            <Button
+                android:text="Order Now!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderButton"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
